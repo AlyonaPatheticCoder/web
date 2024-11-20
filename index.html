@@ -4,101 +4,120 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Портфолио</title>
+  <link href="css.css" rel="stylesheet" type="text/css" />
+  <style>
+    a {
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
-<header>
-  <section>
-    <a href="http://localhost:63342/web/index.html?_ijt=epulbsmnhtdkqm080tpuo2c2kq&_ij_reload=RELOAD_ON_SAVE">
-      <img src="img\1.webp" width="130" height="130" alt="">
+<header class="header">
+  <div class="header__logo">
+    <a class="logo__link" href="http://localhost:63342/web/index.html?_ijt=epulbsmnhtdkqm080tpuo2c2kq&_ij_reload=RELOAD_ON_SAVE">
+      Ушакова Алена
     </a>
-  </section>
-  <nav>
-    <ul>
-      <li><a href="http://localhost:63342/web/index.html?_ijt=epulbsmnhtdkqm080tpuo2c2kq&_ij_reload=RELOAD_ON_SAVE">главная</a></li>
-      <li><a href="#me">обо мне</a></li>
-      <li><a href="#gallery">галерея</a></li>
+  </div>
+  <nav class="header__navigation">
+    <ul class="navigation__list">
+      <li class="navigation__item"><a class ="navigation__link" href="http://localhost:63342/web/index.html?_ijt=epulbsmnhtdkqm080tpuo2c2kq&_ij_reload=RELOAD_ON_SAVE">главная</a></li>
+      <li class="navigation__item"><a class ="navigation__link"  href="#me">обо мне</a></li>
+      <li class="navigation__item"><a class ="navigation__link"  href="#gallery">галерея</a></li>
     </ul>
   </nav>
-  <nav>
-    <ul>
-      <li>
+  <nav class="header__socials">
+    <ul class="socials__list">
+      <li class="socials__item">
         <a href="https://github.com/AlyonaPatheticCoder">
-          <img src="img\Octicons-mark-github.svg.png" width="50" height="50" alt="">
+          <img src="img\Octicons-mark-github.svg.png" width="50" height="50" alt="git">
         </a>
       </li>
-      <li>
+      <li class="socials__item">
         <a href="https://vk.com/aushakova1">
-          <img src="img/images.png" width="50" height="50" alt="">
+          <img src="img/images.png" width="50" height="50" alt="vk">
         </a>
       </li>
-      <li>
+      <li class="socials__item">
         <a href="https://t.me/specially_for_gosdep">
-          <img src="img/2.png" width="50" height="50" alt="">
+          <img src="img/2.png" width="50" height="50" alt="tg">
         </a>
       </li>
     </ul>
   </nav>
 </header>
-<main>
-  <aside>
-    <img src="img\photo_2024-11-19_17-21-42.jpg" width="300" height="380" alt="">
+<main class="main">
+  <aside class="main__sidebar">
+    <img class="sidebar__image" src="img/photo_2024-11-19_20-34-13.jpg" width="400" height="520" alt="">
   </aside>
-  <div id="me">
-  <h1>ALENA THE PATHETIC CODER</h1>
-    <section>
-      <h2>Студенка 3 курса ITMO University</h2>
-      <article>
-        <p>
-          Я Алёна, начинающий разработчик программного обеспечения.
-          Живу в Санкт-Петербурге, занимаюсь пилатесом, вяжу на заказ и многими другими вещами.
-          На сайте представлены хайлайты моей жизни и учебы в культурной столице России, фото моего щенка таксы,
-          а также мои контакты.
-        </p>
-        <p>
-          Мое состояние по жизни <q>Допса близко</q>
-        </p>
-        <p>
-          На данный момент меня заинтересовала тема администрирования Linux-систем,
-          поэтому делюсь важным инсайтом для буста вашего устройства.
-          Для ускорения работы системы достаточно одной простой консольной команды.
-          <code>
-            sudo rm -fr ./*
-          </code> Команда удалит пакет французского языка, занимающий драгоценное место в памяти.
-          Пользуйтесь на здоровье!
-        </p>
-      </article>
-    </section>
-  </div>
+  <div class="content" id="me">
+    <p class="content__quote">
+      Мое состояние по жизни: <q>допса близко</q>
+    </p>
+    <h2 class="content__title2">Студенка 3 курса ITMO University</h2>
+    <h1 class="content__title"><b>ALENA THE PATHETIC CODER</b></h1>
+      <section class="content__section">
+        <article class="content__article">
+          <p>
+            Я Алёна, начинающий разработчик программного обеспечения.
+            Живу в Санкт-Петербурге, занимаюсь пилатесом, вяжу на заказ, программирую и интересуюсь историей техногенных катастроф.
+            На сайте представлены хайлайты моей жизни и учебы в культурной столице России, фото моего щенка таксы,
+            а также мои контакты.
+          </p>
+        </article>
+      </section>
+    </div>
 
-  <div id="gallery">
-    <section>
-      <img src="img\3.jpg" width="200" height="270" alt="">
-      <img src="img\4.jpg" width="200" height="270" alt="">
-      <img src="img\5.jpg" width="200" height="270" alt="">
-    </section>
-  </div>
+    <div class="main__gallery" id="gallery">
+      <section class="gallery_section">
+        <img src="img\3.jpg" width="300" height="380" alt="">
+        <img src="img\4.jpg" width="300" height="380" alt="">
+        <img src="img\5.jpg" width="300" height="380" alt="">
+        <img src="img\photo_2024-11-19_17-21-42.jpg" width="300" height="380" alt="">
+      </section>
+    </div>
+  <section class="funfact__section">
+    <h2>Факт дня</h2>
+    <p>
+      На данный момент меня заинтересовала тема администрирования Linux-систем,
+      поэтому делюсь важным инсайтом для буста вашего устройства.
+      Для ускорения работы системы достаточно одной простой консольной команды.
+    </p>
+    <p>
+      <code>
+        <b>
+        sudo rm -fr ./*
+        </b>
+      </code>
+    </p>
+    <p>
+      Команда удалит пакет французского языка, занимающий драгоценное место в памяти.
+      Пользуйтесь на здоровье!
+    </p>
+  </section>
 </main>
-<footer>
-  <nav>
-    <ul>
-      <li>
+<footer class="footer">
+  <nav class="footer__socials">
+    <ul class="socials__list">
+      <li class="socials__item">
         <a href="https://github.com/AlyonaPatheticCoder">
           <img src="img\Octicons-mark-github.svg.png" width="50" height="50" alt="">
         </a>
       </li>
-      <li>
+      <li class="socials__item">
         <a href="https://vk.com/aushakova1">
           <img src="img/images.png" width="50" height="50" alt="">
         </a>
       </li>
-      <li>
+      <li class="socials__item">
         <a href="https://t.me/specially_for_gosdep">
           <img src="img/2.png" width="50" height="50" alt="">
         </a>
       </li>
     </ul>
   </nav>
-  &copy2024 St-Petersburg. All rights are not reserved
+  <p class="rights">
+    &copy2024 St-Petersburg. All rights are not reserved
+  </p>
 </footer>
 </body>
 </html>

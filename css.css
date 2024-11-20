@@ -1,0 +1,112 @@
+h1 {
+    font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
+    font-size: 40px;
+    background-color: #e8e8e8;
+    background-image: linear-gradient(90deg, #F2509C, #005485);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h2 {
+    font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
+    font-size: 30px;
+    color: #345f7e;
+}
+p {
+    line-height: 1.5;
+    font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
+    font-size: 24px;
+    color: #4a4a4a;
+}
+code {
+    font-size: 28px;
+    color: #F2509C;
+}
+footer {
+    font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
+    font-size: 19px;
+    color: #4a4a4a;
+    background-color: white;
+    padding: 10px;
+}
+
+.logo__link {
+    text-decoration: none;
+    color: #4a4a4a;
+    font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
+    font-size: 32px;
+}
+.navigation__link {
+    font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
+    text-decoration: none;
+    color: #4a4a4a;
+    font-size: 26px;
+}
+
+.rights {
+    font-size: 20px;
+}
+header {
+    padding: 10px;
+}
+main {
+    background-color: #e8e8e8;
+    padding: 10px;
+}
+.funfact__section {
+    border-radius: 20px 20px 20px 20px;
+    background: white;
+    padding: 20px;
+}
+.navigation__item {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+.navigation__list {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.socials__item {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 15px;
+}
+.socials__list {
+    list-style-type: none;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+}
+.gallery_section {
+    margin-bottom: 20px;
+}
+.sidebar__image {
+    margin: 20px 0 0 70px;
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
+}
+.content__quote {
+    text-transform: lowercase;
+    margin: 20px 70px 0 45px;
+}
+.content__article {
+    margin: 20px 660px 20px 30px;
+    border-style: dashed;
+    border-color: #f39ac0;
+    border-radius: 20px 20px 20px 20px;
+    padding: 15px;
+}
+q {
+    quotes: "“" "”";
+}
+.content__title2 {
+    margin: 20px 70px 0 45px;
+}
+.content__title {
+    margin: 20px 70px 40px 45px;
+}
+.gallery_section {
+    margin: 20px 70px 20px 45px;
+}
+
