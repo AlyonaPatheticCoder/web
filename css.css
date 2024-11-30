@@ -20,6 +20,20 @@ p {
     font-size: 24px;
     color: #4a4a4a;
 }
+/*.load-time {*/
+/*    display: flex;*/
+/*    width: 100%;*/
+/*}*/
+.active .navigation-link__text {
+    color: #f1338b
+}
+
+.navigation__link:hover {
+    color: #F2509C;
+}
+.logo__link:hover {
+    color: #F2509C;
+}
 
 code {
     font-size: 28px;
@@ -35,6 +49,10 @@ footer {
     padding: 10px;
     align-items: center;
     flex-wrap: wrap;
+    position: absolute; /* Фиксируем подвал */
+    bottom: 0;  /* Всегда внизу, на виду */
+    left: 0;
+    right: 0;
 }
 
 .logo__link {
@@ -119,10 +137,27 @@ main {
     justify-content: center;
     max-width: 100%;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .gallery__item {
     max-width: 20%;
+    flex-wrap: wrap;
+}
+
+.gallery1_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.gallery1__item {
+    max-width: 40%;
     flex-wrap: wrap;
 }
 
@@ -164,11 +199,13 @@ q {
     flex-direction: row;
     max-width: 80%;
     gap: 50px;
+    margin-bottom: 100px;
 }
 .table__container {
     width: 70%;
     border-collapse: collapse;
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 140px;
 }
 
 .table__container td {
@@ -219,6 +256,11 @@ q {
         text-align: right;
         position: relative;
     }
+}
+
+body {
+    min-height: 100vh;
+    position: relative;
 }
 
 
