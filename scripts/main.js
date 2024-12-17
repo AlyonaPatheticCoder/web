@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("load", function() {
         const endTime = performance.now();
         const loadTime = (endTime - startTime).toFixed(1);
-        const loadTimeElement = document.getElementById("load-time");
-        loadTimeElement.textContent = `Время загрузки страницы: ${loadTime} мс`;
+        const loadTimeElement = document.getElementById("load__time");
+        loadTimeElement.textContent = `Время загрузки страницы: ${loadTime} мс.`;
     });
 });
